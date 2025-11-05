@@ -10,7 +10,6 @@ $note = isset($_POST['note']) ? $_POST['note'] : '';
 
 $fasilitas = isset($_POST['fasilitas_tambahan']) ? implode(', ', $_POST['fasilitas_tambahan']) : '';
 
-// Harga dan aturan yang sama seperti di detail.php
 $paketHarga = [
     "Paket Intensif SBMPTN" => 500000,
     "Paket Reguler" => 750000,
@@ -67,4 +66,5 @@ if ($query) {
 } else {
     echo "Gagal menambah data: " . mysqli_error($koneksi);
 }
+
 ?>
